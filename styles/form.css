@@ -1,5 +1,6 @@
 *{
     margin: 10px;
+    background-color: antiquewhite;
 }
 .form-1{
     max-width: 500px;
@@ -15,4 +16,11 @@
 }
 .hr{
     border: 1px solid thistle;
+}
+#submit{
+    background-color: darkgoldenrod;
+    padding: 5px 10px;
+    border: darkgoldenrod;
+    border-radius: 5px;
+    font-size: 1.1em;
 }
