@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            padding-bottom: 22px;
+        }
+       .container{
+        display: grid;
+        gap: 3px;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(6, minmax(0,1fr));
+        width: 100%;
+       grid-auto-rows: 1fr;
+        height: 100vh;
+       }
+       .box img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+       }
+       .big-layout{
+        grid-column: span 6;
+        grid-row: span 2;
+       }
+       .light{
+        grid-column: span 2;
+        grid-row: span 2;
+       }
+       .library{
+        grid-column: span 2;
+        grid-row: span 2;
+       }
+       .hill{
+        grid-column: span 2;
+       }
+       .shybal{
+        grid-column: span 2;
+       }
+       .bird{
+       
+          grid-column: span 2;
+        grid-row: span 2;
+       }
+       .div-container{
+         display: grid;
+         gap: 3px;
+         grid-template-columns: repeat(2,1fr);
+         grid-template-rows: repeat(2, minmax(0,1fr)); 
+          grid-column: span 2;
+        grid-row: span 2; 
+         box-sizing: border-box;
+       }
+       .food{
+           grid-column: span 2;
+        grid-row: span 2;
+       }   
+    </Style>
+</head>
+<body>
+   
+  <!-- .container>.box*11>{img[src="./Images/picture$"]} -->
+   <div class="container">
+    <div class="box big-layout"><img src="./Images/picture2.jpg"></div>
+    <div class="box light"><img src="./Images/picture1.jpg"></div>
+    <div class="box library"><img src="./Images/picture3.jpg"></div>
+    <div class="box hill"><img src="./Images/picture4.jpg"></div>
+    <div class="box shybal"><img src="./Images/picture5.jpg"></div>
+    <div class="box bird"><img src="./Images/picture6.jpg"></div>
+    <div class="div-container">
+         <div class="box">
+            <img src="./Images/picture7.jpg"></div>
+        <div class="box">
+            <img src="./Images/picture8.jpg">
+        </div>
+        <div class="box">
+             <img src="./Images/picture9.jpg">
+        </div>
+        <div class="box">
+              <img src="Images/picture10.jpg" alt="">
+        </div>
+    </div>
+    <div class="box food"><img src="./Images/food.jpg"></div>
+   </div>
+
+ 
+
+
+
+
+
+
+    
+</body>
+</html>

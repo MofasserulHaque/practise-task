@@ -23,4 +23,6 @@
     border: darkgoldenrod;
     border-radius: 5px;
     font-size: 1.1em;
+    animation-name: myAnimation;
+    animation-duration: 10s;
 }
