@@ -8,12 +8,12 @@
         *{
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            
         }
         body{
             height: 100%;
             width: 100%;
-            overflow: hidden;
+           
             padding-bottom: 22px;
         }
        .container{
@@ -65,7 +65,24 @@
        .food{
            grid-column: span 2;
         grid-row: span 2;
-       }   
+       }  
+       @media screen and (max-width:576px){
+        .container{
+            display: grid;
+        gap: 3px;
+        grid-template-columns: repeat(2,1fr);
+        /* grid-template-rows: repeat(11,1fr); */
+        height: auto;
+        }
+        .big-layout, .light, .bird, .food, .shybal, .hill, .library, .building, .drowing, .moon, .grasshoper  {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+       }
     </Style>
 </head>
 <body>
@@ -79,15 +96,15 @@
     <div class="box shybal"><img src="./Images/picture5.jpg"></div>
     <div class="box bird"><img src="./Images/picture6.jpg"></div>
     <div class="div-container">
-         <div class="box">
+         <div class="box grasshoper">
             <img src="./Images/picture7.jpg"></div>
-        <div class="box">
+        <div class="box moon">
             <img src="./Images/picture8.jpg">
         </div>
-        <div class="box">
+        <div class="box drowing">
              <img src="./Images/picture9.jpg">
         </div>
-        <div class="box">
+        <div class="box building">
               <img src="Images/picture10.jpg" alt="">
         </div>
     </div>
